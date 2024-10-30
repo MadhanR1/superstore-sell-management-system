@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+  display: flex;
+  flex-direction: column;
+  background-image: "C:\Users\Madhan R\Downloads\SUPERSTORE SELLS MANAGEMENT SYSTEM\views\custamer.jpg";
+  align-items: left;
+  width: 500px;
+  margin: 0 auto;
+}
+
+label {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border: 5px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.image{background-image: url('https://media.istockphoto.com/id/1316968335/photo/shopping-cart-full-of-food-on-yellow-background-grocery-and-food-store-concept.jpg?s=612x612&w=0&k=20&c=4dNcwlnUrmbAx_WXc777y-75EcKTa6Z9pKXuHLzG-S4=');
+background-repeat: no-repeat;
+width: 100%;
+			background-size: cover;
+			height: 100vh;
+			z-index: -1;
+			overflow: hidden;
+			background-position: 20%;
+}
+/* Add an image to the form */
+form img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+    </style>
+</head>
+<body >
+  <div class='image'>
+    
+    <<form action="/customer" method="post">
+        <label for="customer-id">Customer ID:</label><br>
+        <input type="text" id="customer_id" name="customer_id"><br>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="phone-no">Phone Number:</label><br>
+        <input type="text" id="phone_no" name="phone_no"><br>
+        <label for="age">Age:</label><br>
+        <input type="text" id="age" name="age"><br>
+        <label for="item_id">Item ID:</label><br>
+        <input type="text" id="item_id" name="item_id"><br>
+        <button>submit</button>
+      </form> 
+      
+  </div>
+      
+</body>
+</html>

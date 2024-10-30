@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  margin: 0 auto;
+  
+}
+
+label {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}.image{background-image: url('https://images.unsplash.com/photo-1619617257069-3dc8f124c512?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHN1cGVybWFya2V0c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60');
+background-repeat: no-repeat;
+width: 100%;
+			background-size: cover;
+			height: 100vh;
+			z-index: -1;
+			overflow: hidden;
+			background-position: 20%;
+}
+
+
+/* Add an image to the form */
+form img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+    </style>
+</head>
+<body >
+  <div class='image'>
+    
+    <form action="/store" method="post">
+        <label for="store-id">storeno:</label><br>
+        <input type="text" id="store-id" name="store_id"><br>
+        <label for="Sname">StoreName:</label><br>
+        <input type="text" id="Sname" name="Sname"><br>
+        <label for="splace">Storeplace:</label><br>
+        <input type="text" id="splace" name="splace"><br>
+        <label for="smanager">smanager:</label><br>
+        <input type="text" id="smanager" name="smanager"><br>
+        <label for="Estore-id">Estore-id:</label><br>
+        <input type="text" id="Estore-id" name="Estore_id"><br>
+        <button>submit</button>
+      </form> 
+    </div>
+</body>
+</html>

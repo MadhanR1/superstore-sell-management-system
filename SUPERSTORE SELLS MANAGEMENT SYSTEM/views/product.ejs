@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+  display: flex;
+  flex-direction: column;
+  background-image: url("C:\Users\Madhan R\Downloads\SUPERSTORE SELLS MANAGEMENT SYSTEM\views\employee.jpg");
+  align-items: centeleft;
+  width: 500px;
+  margin: 0 auto;
+}
+
+label {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* Add an image to the form */
+.image{background-image: url('https://images.unsplash.com/photo-1601598851547-4302969d0614?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8c3VwZXJtYXJrZXQlMjBzdG9yZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60');
+background-repeat: no-repeat;
+width: 100%;
+			background-size: cover;
+			height: 100vh;
+			z-index: -1;
+			overflow: hidden;
+			background-position: 20%;
+}
+
+form img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+    </style>
+</head>
+<body >
+  <div class='image'>
+    
+    <form action="/product" method="post">
+        <label for="product-name">Product Name:</label><br>
+        <input type="text" id="product-name" name="product_name"><br>
+        <label for="product-no">Product Number:</label><br>
+        <input type="text" id="product-no" name="product_num"><br>
+        <label for="price">Price:</label><br>
+        <input type="text" id="price" name="price"><br>
+        <label for="date">Date:</label><br>
+        <input type="text" id="date" name="date"><br>
+        <label for="branch-no">Branch Number:</label><br>
+        <input type="text" id="branch-no" name="branch_no"><br>
+        <button>submit</button>  
+      </form> 
+    </div> 
+      
+</body>
+</html>

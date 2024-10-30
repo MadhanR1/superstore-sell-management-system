@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 500px;
+  margin: 0 auto;
+  background-image: 'employee image.png';
+  
+
+}
+
+label {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+  background-color: #3631d2;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.image{background-image: url('https://media.istockphoto.com/id/1397566133/photo/choosing-a-dairy-products-at-supermarket-empty-grocery-cart-in-an-empty-supermarket.jpg?s=612x612&w=0&k=20&c=cI84rMWkBVLCVqme8psFOdTewIRz1YhoRazbSbBKmAg=');
+background-repeat: no-repeat;
+width: 100%;
+			background-size: cover;
+			height: 100vh;
+			z-index: -1;
+			overflow: hidden;
+			background-position: 20%;
+}
+/* Add an image to the form */
+form img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+    </style>
+</head>
+<body >
+  <div class='image'>
+    
+    <form action="/employee" method="post">
+      
+        <label for="emp-id"><b>Employee ID:</b></label><br>
+        <input type="text" id="emp-id" name="emp_id"><br>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="salary">Salary:</label><br>
+        <input type="text" id="salary" name="salary"><br>
+        <label for="age">Age:</label><br>
+        <input type="text" id="age" name="age"><br>
+        <label for="city">City:</label><br>
+        <input type="text" id="city" name="city"><br>
+        <button>submit</button>
+      </form> 
+  </div>
+</body>
+</html>

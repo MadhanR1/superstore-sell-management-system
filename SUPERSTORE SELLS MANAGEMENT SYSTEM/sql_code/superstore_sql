@@ -1,0 +1,44 @@
+create table Employee
+(Emp_id int,
+Emp_Name varchar(90),
+Emp_salary int,
+Emp_age int,
+Emp_city varchar(90),
+primary key(Emp_id));
+
+create table Store
+(Store_no int,
+Store_name varchar(90),
+Store_place varchar(90),
+Store_manager varchar(90),
+Estore_id int,
+primary key(Store_no),
+foreign key(Estore_id)references Employee(Emp_id));
+
+create table Product
+(Product_name varchar(90),
+Product_no int,
+Product_price int,
+Product_exDate DATE,
+Branch_no int,
+primary key(Product_no),
+foreign key(Branch_no)references Store(Store_no));
+
+create table Customer_data
+(Customer_id int,
+Customer_name varchar(90),
+Customer_mno int,
+Customer_age int,
+Item_id int,
+primary key(Customer_id),
+foreign key(Item_id)references Product (Product_no));
+
+create table Payment
+(Payment_id int,
+payment_amount int,
+Payment_Date DATE,
+Type_of_product_no int,
+Paycustomer_id int,
+primary key(Payment_id),
+foreign key(Type_of_product_no)references Product(Product_no),
+foreign key(Paycustomer_id)references Customer_data(Customer_id));
